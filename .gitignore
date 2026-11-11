@@ -1,0 +1,55 @@
+# Secretos. La contraseña vive solo en .env local (ver .env.example).
+.env
+.env.*
+!.env.example
+
+# Base Neo4j, volúmenes y copias. Nunca van al repositorio.
+data/
+dumps/
+volumes/
+backups/
+*.dump
+*.graphml
+
+# Documentos de estudio. El repo es solo código.
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.djvu
+*.doc
+*.docx
+libros/
+documentos/
+corpus/
+books/
+inbox/
+
+# Cachés de embeddings y modelos descargados en el árbol de trabajo.
+.cache/
+**/.cache/
+huggingface/
+models/
+*.safetensors
+*.onnx
+*.bin
+*.pt
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+
+# Editores y sistema
+.idea/
+.vscode/
+*.swp
+.DS_Store
